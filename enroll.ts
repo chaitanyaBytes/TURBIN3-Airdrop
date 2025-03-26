@@ -13,7 +13,7 @@ const github = Buffer.from("chaitanyaBytes", "utf8");
 const provider = new AnchorProvider(connection, new Wallet(keypair), { commitment: "confirmed" });
 
 // Create the Anchor program
-const program: Program = new Program(IDL, provider);
+const program: Program<Turbin3Prereq> = new Program(IDL, provider);
 
 // Create PDA for enrollment
 const enrollment_seeds = [Buffer.from("pre"), keypair.publicKey.toBuffer()];
