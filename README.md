@@ -1,79 +1,36 @@
-# Turbin3 Prerequisites
+# Typescript Registration for Turbin3 Q2 2025
 
-A TypeScript-based project for interacting with the Solana blockchain, specifically designed for Turbin3 prerequisites. This repository contains scripts for key generation, airdrop requests, token transfers, and program enrollment.
+This project is part of the Rust Registration Q1,Q2 2025 tutorial. It demonstrates how to interact with the Solana blockchain using Typescript. It includes:
+- Keypair generation
+- Import/Export to Phantom
+- Devnet token airdrop
+- Token transfers
+- Enrollment in the Turbin3 dApp
 
-## Features
+## How to Run
+1. Clone the repository.
+2. Install dependencies: `yarn install`.
+3. Run the scripts:
+   - `yarn keygen`
+   - `yarn airdrop`
+   - `yarn transfer`
+   - `yarn enroll`
+   - `yarn convert`
 
-- **Key Generation**: Generate Solana keypairs for development
-- **Airdrop**: Request SOL tokens on the Solana Devnet
-- **Token Transfer**: Transfer SOL tokens between wallets
-- **Program Enrollment**: Enroll in the Turbin3 program using your GitHub account
+## Transaction Results
 
-## Prerequisites
+### 1. Claim Devnet Tokens
+Successfully claimed 2 devnet SOL tokens.
+[View Transaction Q2-2025](https://explorer.solana.com/tx/2LyzzE9mYs2snF1cxxofKSphhnVYofmLd519Z5boexGhZb5A5e2w9TqLNPPg5NRrmDMGsN2iXKUzAAACgx4BwxK9?cluster=devnet)
 
-- Node.js (v14 or higher)
-- Yarn package manager
-- Solana CLI tools
-- A Solana wallet with some SOL tokens for testing
+### 2. Transfer Tokens to Turbin3 Wallet
+Transferred 0.01 SOL to the Turbin3 wallet.  
+[View Transaction Q2-2025](https://explorer.solana.com/tx/5d2VCCitn6t7r4p5HaWFzV6GRUMPtRG4auEyqP2hcFRfsCG5MfQZsHwusYuPo6GzkTScGt9XaRnX19rgUUFeLzSG?cluster=devnet)
 
-## Installation
+### 3. Empty Devnet Wallet
+Emptied the devnet wallet by sending all remaining lamports to the Turbin3 wallet.  
+[View Transaction Q2-2025](https://explorer.solana.com/tx/2Kmn7Cuj8rZWAgJ3EeEMi9Br2tXK17NJcGPLp2bV871HNywFi5CjPs9H5jpZA89Ud6y9NzHQckseMkrkkABFNTn4?cluster=devnet)
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd Tubrin3-Prereq-ts
-```
-
-2. Install dependencies:
-```bash
-yarn install
-```
-
-## Usage
-
-The project provides several scripts for different operations:
-
-### Generate a Keypair
-```bash
-yarn keygen
-```
-
-### Request Airdrop (Devnet)
-```bash
-yarn airdrop
-```
-
-### Transfer SOL Tokens
-```bash
-yarn transfer
-```
-
-### Enroll in Turbin3 Program
-```bash
-yarn enroll
-```
-
-## Project Structure
-
-- `keygen.ts`: Generates Solana keypairs
-- `airdrop.ts`: Requests SOL airdrop on Devnet
-- `transfer.ts`: Handles SOL token transfers
-- `enroll.ts`: Enrolls in the Turbin3 program
-- `programs/`: Contains the Turbin3 program interface
-
-## Dependencies
-
-- `@coral-xyz/anchor`: Anchor framework for Solana development
-- `@solana/web3.js`: Solana Web3 JavaScript API
-- `bs58`: Base58 encoding/decoding
-- `prompt-sync`: For command-line input
-- `typescript`: TypeScript support
-- `ts-node`: TypeScript execution environment
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+### 4. Enroll in the Turbin3 dApp
+Successfully enrolled in the Turbin3 dApp using my GitHub account.  
+[View Transaction Q2-2025](https://explorer.solana.com/tx/2htQiPvXyQXm8VgL1P9UDz1DFh2mKHmeia4ATCCE21H5AiqKQPHNZtQhx8i1BMXzfKmXsoiLPjNNBdN9kEp7p6ik?cluster=devnet)
